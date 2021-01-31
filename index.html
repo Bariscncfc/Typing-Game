@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Barış Can Çifçi">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/2554/2554320.svg?token=exp=1612035744~hmac=082461a9ebd04bb9e5d248639170f336" type="image/gif" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Hızlı Klavye</title>
+</head>
+<body>
+    <section>
+        <button id="settings-btn" class="settings-btn">
+            <i class="fas fa-cog"></i>
+        </button>
+
+        <div class="settings" id="settings">
+            <form action="" id="settings-form">
+                <div>
+                    <label for="diffuculty">Zorluk Seviyesi:</label>
+                    <select  id="diffuculty">
+                        <option value="easy">Kolay</option>
+                        <option value="medium">Orta</option>
+                        <option value="hard">Zor</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </section>
+  
+    <div class="container">
+        <h2> Klavye Şovalyesi</h2>
+        <small>Kelimeleri takip et</small>
+
+        <h1 id="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="gördüğün kelimeyi buraya yazmalısın">
+
+        <p class="time-container">
+            Kalan Süre: <span id="time">10s</span>
+        </p>
+
+        <p class="score-container">
+            Skor: <span id="score">0</span>
+        </p>
+
+
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
